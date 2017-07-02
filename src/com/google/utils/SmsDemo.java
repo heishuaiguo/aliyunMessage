@@ -33,8 +33,8 @@ public class SmsDemo {
     static final String domain = "dysmsapi.aliyuncs.com";
 
     // TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
-    static final String accessKeyId = "LTAInb7sBH9F5Vk9";
-    static final String accessKeySecret = "ZY7ZO9A6e7d7rn3yM8fQHcHKSIoRNm";
+    static final String accessKeyId = "************";
+    static final String accessKeySecret = "*************";
 
     public static SendSmsResponse sendSms() throws ClientException {
 
@@ -50,7 +50,7 @@ public class SmsDemo {
         //组装请求对象-具体描述见控制台-文档部分内容
         SendSmsRequest request = new SendSmsRequest();
         //必填:待发送手机号
-        request.setPhoneNumbers("13488966130");
+        request.setPhoneNumbers("888888888");
         //必填:短信签名-可在短信控制台中找到
         request.setSignName("宋鹏");
         //必填:短信模板-可在短信控制台中找到
@@ -86,7 +86,7 @@ public class SmsDemo {
         //组装请求对象
         QuerySendDetailsRequest request = new QuerySendDetailsRequest();
         //必填-号码
-        request.setPhoneNumber("18666238975");
+        request.setPhoneNumber("8888888888");
         //可选-流水号
         request.setBizId(bizId);
         //必填-发送日期 支持30天内记录查询，格式yyyyMMdd
